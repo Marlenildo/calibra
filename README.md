@@ -34,6 +34,17 @@ Ou direto do GitHub:
 shiny::runGitHub("calibra", "Marlenildo")
 ```
 
+## Publicação (Posit Connect Cloud)
+
+O repositório inclui um `manifest.json` para publicar direto do GitHub em
+[connect.posit.cloud](https://connect.posit.cloud): **Publish → Shiny → repositório `Marlenildo/calibra`,
+branch `main`, arquivo `app.R`**. Para regerar o manifest depois de mudar dependências ou arquivos:
+
+```r
+rsconnect::writeManifest(appFiles = c("app.R", "global.R", "ui.R", "server.R", "DESCRIPTION",
+                                      list.files("www", recursive = TRUE, full.names = TRUE)))
+```
+
 ## Estrutura
 
 - `app.R`: ponto de entrada · `ui.R`: interface · `server.R`: lógica · `global.R`: ajuste e gráfico

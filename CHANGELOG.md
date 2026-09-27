@@ -19,4 +19,5 @@ Linear Simples".
   própria, favicon e logo do autor no rodapé.
 - Planilha de pontos (concentração e leitura) com quantas linhas forem
   precisas, vírgula decimal e colagem do Excel.
+- `manifest.json` para publicar no Posit Connect Cloud.
 - Curva, equação e R² atualizados enquanto os dados são digitados.

@@ -1,0 +1,15 @@
+Package: calibra
+Type: Shiny
+Title: Calibra - Curva de Calibracao e R2
+Version: 1.0.0
+Authors@R: person("Marlenildo", role = c("aut", "cre", "cph"))
+Description: Aplicativo Shiny simples para laboratoristas: insira os pontos
+    da curva de calibracao (concentracao e leitura) e veja a reta ajustada,
+    a equacao e o coeficiente de determinacao (R2).
+License: MIT + file LICENSE
+URL: https://github.com/Marlenildo/calibra
+BugReports: https://github.com/Marlenildo/calibra/issues
+Encoding: UTF-8
+Language: pt-BR
+Depends: R (>= 4.1.0)
+Imports: shiny (>= 1.7.0), ggplot2 (>= 3.4.0), rhandsontable

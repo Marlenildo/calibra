@@ -1,0 +1,50 @@
+/* Calibra: identidade visual alinhada ao Ranova, ao Croma e ao Minhas Entregas */
+:root { --navy:#173b5b; --blue:#2a5c92; --blue-soft:#eaf2fa; --green:#4d965d; --ink:#263b4d; --muted:#627589; --line:#d9e3eb; --canvas:#f4f7fa; --white:#fff; }
+body { background:var(--canvas); color:var(--ink); font-family:"Avenir Next","Segoe UI",Arial,sans-serif; }
+.container-fluid { max-width:1200px; margin:auto; padding:26px 24px 36px; }
+
+/* Cabeçalho */
+.cabecalho-app { display:flex; align-items:center; gap:20px; padding:0 2px 24px; }
+.logo-app { width:78px; height:78px; flex:none; filter:drop-shadow(0 4px 10px rgba(23,59,91,.18)); }
+.titulo-area { border-left:2px solid var(--line); padding-left:20px; }
+.titulo { color:var(--navy); font-size:36px; line-height:1.15; font-weight:750; letter-spacing:-.8px; }
+.descricao-app { color:var(--blue); font-size:16px; font-weight:800; margin-top:2px; }
+.subtitulo { color:var(--muted); font-size:15px; margin-top:7px; }
+
+/* Cartões */
+.grade-trabalho { margin-left:-9px; margin-right:-9px; }.grade-trabalho > [class*="col-"] { padding-left:9px; padding-right:9px; }
+.painel { background:var(--white); border:1px solid var(--line); border-radius:12px; margin-bottom:18px; }
+.cartao { padding:22px; border-top:4px solid var(--navy); }.painel-visual { border-top-color:var(--green); }
+.titulo-cartao { display:flex; align-items:center; gap:10px; margin:0 0 16px; color:var(--navy); font-size:17px; font-weight:800; }
+.numero-passo { display:inline-flex; align-items:center; justify-content:center; width:30px; height:30px; flex:none; border-radius:50%; background:var(--navy); color:#fff; font-size:14px; }
+.painel-visual .numero-passo { background:var(--green); }
+.explicacao { color:var(--muted); font-size:13px; line-height:1.55; }
+
+/* Planilha */
+.planilha { width:100%; overflow:auto; border:1px solid var(--line); border-radius:8px; }
+.planilha .handsontable th { background:#f1f6fb; color:var(--navy); font-weight:800; font-size:12px; }
+.planilha .handsontable td { color:#344b5e; font-size:14px; }
+.nota-planilha { margin-top:10px; }
+
+/* R² e equação */
+.grade-indicadores { display:grid; grid-template-columns:1fr 2fr; gap:10px; margin-bottom:8px; }
+.indicador { border:1px solid var(--line); border-left:4px solid var(--blue); border-radius:10px; padding:10px 16px; min-width:0; }
+.indicador-r2 { border-left-color:var(--green); background:#f4faf5; }
+.indicador-rotulo { color:var(--muted); font-size:11px; font-weight:800; letter-spacing:.6px; }
+.indicador-valor { color:var(--navy); font-size:26px; font-weight:800; line-height:1.3; overflow-wrap:anywhere; }
+.indicador-r2 .indicador-valor { color:#347b46; font-size:32px; }
+.shiny-output-error-validation { color:var(--muted); font-size:14px; padding:30px 0; text-align:center; }
+
+/* Rodapé */
+.nota-privacidade { display:flex; justify-content:center; align-items:center; gap:8px; color:var(--muted); font-size:12px; text-align:center; margin:4px auto 8px; max-width:760px; }
+.rodape-app { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:10px; color:#718498; font-size:12px; padding:14px 0 4px; }
+.logo-rodape { height:42px; width:auto; }
+.versao-app { border-left:1px solid var(--line); padding-left:10px; }.versao-app a { color:#718498; font-weight:700; }.versao-app a:hover { color:var(--blue); }
+
+@media(max-width:991px) { .grade-trabalho > [class*="col-"] { width:100%; float:none; } }
+@media(max-width:767px) {
+  .container-fluid { padding:18px 14px 30px; }
+  .cabecalho-app { gap:12px; align-items:flex-start; }.logo-app { width:60px; height:60px; }
+  .titulo-area { padding-left:12px; }.titulo { font-size:28px; }.descricao-app { font-size:14px; }
+  .cartao { padding:16px; }.grade-indicadores { grid-template-columns:1fr; }.indicador-valor { font-size:22px; }
+}

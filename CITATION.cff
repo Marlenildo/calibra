@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Se você usar o Calibra em trabalhos acadêmicos, cite-o como abaixo."
+title: "Calibra: Curva de calibração e R²"
+abstract: "Aplicativo Shiny simples para inserir os pontos de uma curva de calibração e ver a reta ajustada, a equação e o R²."
+type: software
+authors:
+  - name: "Marlenildo"
+version: 1.0.0
+date-released: 2026-09-27
+license: MIT
+repository-code: "https://github.com/Marlenildo/calibra"
+keywords:
+  - curva de calibração
+  - regressão linear
+  - coeficiente de determinação
+  - validação analítica
+  - laboratório
+  - Shiny
+  - R

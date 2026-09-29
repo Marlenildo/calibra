@@ -25,7 +25,7 @@ desenhar_logo <- function(escala = 1) {
   for (i in seq_along(PADROES_X)) {
     cor <- hex(polarLAB(L = if (MATIZES[i] > 200) 54 else 64,
                         C = if (MATIZES[i] > 200) 34 else 44, H = MATIZES[i]), fixup = TRUE)
-    points(PADROES_X[i], reta(PADROES_X[i]), pch = 16, col = cor, cex = 14 * escala)
+    points(PADROES_X[i], reta(PADROES_X[i]), pch = 16, col = cor, cex = 21 * escala)
   }
 }
 

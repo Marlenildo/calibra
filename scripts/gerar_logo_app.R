@@ -5,15 +5,14 @@
 
 library(colorspace)
 
-PADROES_X <- c(-.42, -.08, .26, .6)
-MATIZES <- c(250, 205, 148, 78)
+PADROES_X <- c(-.42, .09, .6)
+MATIZES <- c(250, 148, 78)
 
 desenhar_logo <- function(escala = 1) {
   par(mar = c(0, 0, 0, 0), bg = "transparent")
   plot.new(); plot.window(c(-1, 1), c(-1, 1), asp = 1)
 
-  espessura <- 92 * escala
-  traco <- espessura * .38
+  traco <- 70 * escala
   reta <- function(x) -.62 + (x + .7) * 1.02
 
   # Eixos em L
@@ -24,8 +23,8 @@ desenhar_logo <- function(escala = 1) {
 
   # Padrões sobre a reta
   for (i in seq_along(PADROES_X)) {
-    cor <- hex(polarLAB(L = if (MATIZES[i] > 200) 56 else 64,
-                        C = if (MATIZES[i] > 200) 36 else 44, H = MATIZES[i]), fixup = TRUE)
+    cor <- hex(polarLAB(L = if (MATIZES[i] > 200) 54 else 64,
+                        C = if (MATIZES[i] > 200) 34 else 44, H = MATIZES[i]), fixup = TRUE)
     points(PADROES_X[i], reta(PADROES_X[i]), pch = 16, col = cor, cex = 14 * escala)
   }
 }

@@ -12,6 +12,11 @@ e o projeto usa [Versionamento Semântico](https://semver.org/lang/pt-BR/):
 
 - Script do Google AdSense e `ads.txt` para monetização do app.
 
+### Alterado
+
+- Logo: contorno na mesma espessura do Ranova e do Minhas Entregas; a reta de
+  calibração passa a ter três padrões em vez de quatro.
+
 ## [1.0.0] - 2026-09-27
 
 Primeira versão, com o nome **Calibra**, a partir do app "Gerar Regressão

@@ -1,5 +1,6 @@
 ui <- fluidPage(
   tags$head(
+    tags$script(async = NA, src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3130340973057636", crossorigin = "anonymous"),
     tags$link(rel = "stylesheet", type = "text/css", href = "css/app.css"),
     tags$meta(name = "author", content = "Marlenildo"),
     tags$meta(name = "description", content = "Calibra: insira os pontos da curva de calibração e veja a reta, a equação e o R²."),
